@@ -1,0 +1,126 @@
+Types of CSS
+There are three types of CSS which are given below:
+
+
+Inline CSS
+Internal or Embedded CSS
+External CSS
+
+
+Inline CSS:
+Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+Example:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inline CSS</title>
+    </head>
+     <body>
+        <p style = "color:#009900; font-size:50px;
+                font-style:italic; text-align:center;">
+            Rahul Kumar Singh 
+        </p>
+     </body>
+</html>         
+
+Output: 
+ 
+
+
+inline CSS property example
+
+Internal or Embedded CSS:
+This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+Example:  
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internal CSS</title>
+        <style>
+            .main {
+                text-align:center; 
+            }
+            .rks {
+                color:#009900;
+                font-size:50px;
+                font-weight:bold;
+            }
+            .class {
+                font-style:bold;
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "main">
+            <div class ="rks">Rahul Kumar Singh</div>
+             <div class ="class">
+                A computer science portal for geeks
+            </div>
+        </div>
+    </body>
+</html>              
+
+Output: 
+ 
+
+
+embeded css
+
+External CSS:
+External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, ... etc). 
+CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web pages.
+Example: The file given below contains CSS property. This file save with .css extension. For Ex: geeks.css  
+
+body {
+    background-color:powderblue;
+}
+.main {
+    text-align:center;   
+}
+.GFG {
+    color:#009900;
+    font-size:50px;
+    font-weight:bold;
+}
+#geeks {
+    font-style:bold;
+    font-size:20px;
+}
+
+Below is the HTML file that is making use of the created external style sheet  
+
+
+link tag is used to link the external style sheet with the html webpage.
+href attribute is used to specify the location of the external style sheet file.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="geeks.css"/>
+    </head>
+     <body>
+        <div class = "main">
+            <div class ="rahul">web developer 022</div>
+            <div id ="geeks">
+                A computer science portal for geeks
+            </div>
+        </div>
+    </body>
+</html>
+
+Output: 
+ 
+
+
+external css
+
+Properties of CSS:
+Inline CSS has the highest priority, then comes Internal/Embedded followed by External CSS which has the least priority. Multiple style sheets can be defined on one page. If for an HTML tag, styles are defined in multiple style sheets then the below order will be followed. 
+
+
+As Inline has the highest priority, any styles that are defined in the internal and external style sheets are overridden by Inline styles.
+Internal or Embedded stands second in the priority list and overrides the styles in the external style sheet.
+External style sheets have the least priority. If there are no styles defined either in inline or internal style sheet then external style sheet rules are applied for the HTML tags.
