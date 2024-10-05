@@ -1,0 +1,86 @@
+Difference between em and rem units in CSS
+While setting the size of any element in CSS, we have two choices. The first one is absolute units and the other is relative units. Absolute units are fixed and not relative to anything else. They are always identical in any case. They involve cm, mm, px, etc. On the other side, relative units are relative to something else. It may be the size of the parent element or the size of the main HTML. Relative units cover em, rem, vw, vh, etc. These are scalable units and helps in responsive design. Many of us might get confused between the relative units, especially the em and the rem units. Let’s break down the difference between those two. Basically that both rem and em are scalable and relative units of size, but with em, the unit is relative to the font size of its parent element, while the rem unit is only relative to the root font size of the HTML document. The “r” in rem stands for “root”. 
+
+Lets’s understand both of them in detail.
+
+1. em Unit: The em unit allows setting the font size of an element relative to the font size of its parent. When the size of the parent element changes, the size of the child changes automatically.
+
+Note: When em units are used on font-size property, the size is relative to the font-size of the parent. When used on other properties, it’s relative to the font-size of that element itself. Here, only the first declaration takes the reference of the parent.
+
+The font-size of the .child element will be 40px (2*20px).
+The margin of .child will be 60px. That’s 1.5 times the font-size of our element (1.5*40px).
+Example:
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Em vs Rem</title>
+</head>
+ <style>
+    .parent {
+        font-size: 20px;
+    }
+     .child-em {
+        font-size: 2em;
+        margin: 1.5em;
+    }
+</style>
+ <body>
+    <div class="parent">
+        This is parent
+        <div class="child-em">
+            This is Child in em unit system
+        </div>
+    </div>
+</body>
+ </html>
+Output:
+
+
+em unit
+2. rem Unit: The rem is based upon the font-size value of the root element, which is the <html> element. And if the <html> element doesn’t have a specified font-size, the browser default value of 16px is used. So here only the value of the root is considered, and there is no relation with a parent element.
+
+Unlike em, here size is relative for all declarations, not only first. Let’s understand this with our previous example.
+
+The font-size of the .child element will be 60px (2*30px).
+The margin of .child will be 45px. That’s 1.5 times the font-size of the html element (1.5*30px).
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Em vs Rem</title>
+</head>
+ <style>
+    html {
+        font-size: 30px;
+    }
+     .parent {
+        font-size: 20px;
+    }
+     .child-rem {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+</style>
+ <body>
+    <div class="parent">
+        This is parent
+        <div class="child-rem">
+            This is Child in rem unit system
+        </div>
+    </div>
+</body>
+ </html>
+Output:
+
+
+rem unit
+Difference between em and rem unit is given below:
+
+Parameter	
+em
+
+rem
+
+Relativity	em is relative to the font-size of its direct or nearest parent	rem is relative to the HTML (root) font-size
+Compounding Effect	May lead to a compounding effect	Does not lead to a compounding effect
+Hope you got a clear difference between the em and the rem units. It is very easy to remember, r in rem indicates root, is relative to the root (HTML) and em is relative to the parent.
