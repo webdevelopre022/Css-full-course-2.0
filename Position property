@@ -1,0 +1,432 @@
+Position property
+The position property in CSS tells about the method of positioning for an element or an HTML entity. There are five different types of position property available in CSS:
+
+Fixed
+Static
+Relative
+Absolute
+Sticky
+The positioning of an element can be done using the top, right, bottom, and left properties. These specify the distance of an HTML element from the edge of the viewport. To set the position by these four properties, we have to declare the positioning method. Let’s understand each of these position methods in detail:
+
+Fixed: Any HTML element with position: fixed property will be positioned relative to the viewport. An element with fixed positioning allows it to remain at the same position even we scroll the page. We can set the position of the element using the top, right, bottom, left.
+
+Example: The below example illustrates the CSS positioning element by using the position: fixed property.
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> CSS Positioning Element</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #efefef;
+    }
+     .fixed {
+        position: fixed;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+        top: 50;
+        left: 10;
+    }
+     span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+    }
+    </style>
+</head>
+ <body>
+    <div class="fixed">This div has
+        <span>position: fixed;</span>
+    </div>
+    <pre>
+            Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enrol now! Master core
+            Data Structures & Algorithms to ace interviews
+            from IIT & Stanford Alumni. TA Support. Placements
+            in Companies. Get Certified. 350+ Problems.A data
+            structure is a particular way of organizing data in
+            a computer so that it can be used effectively.
+            Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enrol now! Master core
+            Data Structures & Algorithms to ace interviews
+            from IIT & Stanford Alumni. TA Support. Placements
+            in Companies. Get Certified. 350+ Problems.A data
+            structure is a particular way of organizing data in
+            a computer so that it can be used effectively.
+            Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enrol now! Master core
+            Data Structures & Algorithms to ace interviews
+            from IIT & Stanford Alumni. TA Support. Placements
+            in Companies. Get Certified. 350+ Problems.A data
+            structure is a particular way of organizing data in
+            a computer so that it can be used effectively.
+            Learn the most common Data Structures & Algorithms
+            to solve coding problems. Enrol now! Master core
+            Data Structures & Algorithms to ace interviews
+            from IIT & Stanford Alumni. TA Support. Placements
+            in Companies. Get Certified. 350+ Problems.A data
+            structure is a particular way of organizing data in
+            a computer so that it can be used effectively.
+    </pre>
+</body>
+ </html>
+Output:
+
+
+
+Static: This method of positioning is set by default. If we don’t mention the method of positioning for any element, the element has the position: static method by default. By defining Static, the top, right, bottom and left will not have any control over the element. The element will be positioned with the normal flow of the page.
+
+Example: The below example illustrates the CSS positioning element by using the position: static property.
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> CSS Positioning Element</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #efefef;
+    }
+     .static {
+        position: static;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+    }
+     span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+    }
+    </style>
+</head>
+ <body>
+    <div class="static">
+        This div has
+            <span>position: static;</span>
+    </div>
+    <pre>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+    </pre>
+</body>
+ </html>
+Output:
+
+
+
+Relative: An element with position: relative is positioned relatively with the other elements which are sitting at top of it. If we set its top, right, bottom, or left, other elements will not fill up the gap left by this element. An element with its position set to relative and when is adjusted using top , bottom ,left, right will be positioned relative to its original position.
+
+Example: The below example illustrates the CSS positioning element by using the position: relative property. In the below illustration the top and left coordinates of the div are each to 100px.
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> CSS Positioning Element</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #efefef;
+    }
+     .relative {
+        position: relative;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+        top:100px;
+        left:100px;
+    }
+     span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+    }
+    </style>
+</head>
+ <body>
+    <pre>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        <div class="relative">
+            This div has <span>position: relative;</span>
+        </div>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+    </pre>
+</body>
+ </html>
+Output:
+
+
+
+Absolute: An element with position: absolute will be positioned with respect to its nearest Non-static ancestor. The positioning of this element does not depend upon its siblings or the elements which are at the same level.
+
+Example: The below example illustrates the CSS positioning element by using the position: absolute property.
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> CSS Positioning Element</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #efefef;
+    }
+     .absolute {
+        position: absolute;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+        font-size: 15px;
+        bottom: 20px;
+        right: 20px;
+    }
+     .relative {
+        position: relative;
+        background: #aad000;
+        height: 300px;
+        font-size: 30px;
+        border: 1px solid #121212;
+        text-align: center;
+    }
+     span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+    }
+     pre {
+        padding: 20px;
+        border: 1px solid #000000;
+    }
+    </style>
+</head>
+ <body>
+     <pre>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+                <div class="relative">
+                    <div >
+                        This div has
+                        <span>
+                            <strong>position: relative;</strong>
+                        </span>
+                    </div>
+                    <div class="absolute">
+                       This div has
+                            <span>
+                                <strong>position: absolute;</strong>
+                            </span>
+                    </div>
+                </div>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+    </pre>
+</body>
+ </html>
+Output:
+
+
+
+Sticky: Element with position: sticky and top: 0 played a role between fixed & relative based on the position where it is placed. If the element is placed at the middle of the document then when the user scrolls the document, the sticky element starts scrolling until it touches the top. When it touches the top, it will be fixed at that place in spite of further scrolling. We can stick the element at the bottom, with the bottom property.
+
+Example: The below example illustrates the CSS positioning element by using the position: sticky property.
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> CSS Positioning Element</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #efefef;
+    }
+     .sticky {
+        position: sticky;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+        top: 10px;
+        right: 50px;
+    }
+     span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+    }
+     pre {
+        padding: 20px;
+        border: 1px solid #000000;
+    }
+    </style>
+</head>
+ <body>
+    <pre>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+                <div class="sticky">
+                     This div has <span>position: sticky;</span>
+                </div>
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+          Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+          Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+        Learn the most common Data Structures & Algorithms
+        to solve coding problems. Enrol now! Master core
+        Data Structures & Algorithms to ace interviews
+        from IIT & Stanford Alumni. TA Support. Placements
+        in Companies. Get Certified. 350+ Problems.A data
+        structure is a particular way of organizing data in
+        a computer so that it can be used effectively.
+    </pre>
+</body>
+ </html>
+Output:
+
+
+
+Supported Browser:
+
+Google Chrome 1.0
+Microsoft Edge 12.0
+Firefox 1.0
+Internet Explorer 4.0
+Opera 4.0
+Safari 1.0
