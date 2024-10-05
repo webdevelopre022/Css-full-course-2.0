@@ -1,0 +1,267 @@
+Display property
+The Display property in CSS defines how the components(div, hyperlink, heading, etc) are going to be placed on the web page. As the name suggests, this property is used to define the display of the different parts of a web page. 
+Syntax: 
+ 
+
+display: value;
+Property values 
+ 
+
+Value	Description
+inline	It is used to displays an element as an inline element.
+block	It is used to displays an element as a block element
+contents	It is used to disappear the container.
+flex	It is used to display an element as a block-level flex container.
+grid	It is used to display an element as a block-level grid container.
+inline-block	It is used to display an element as an inline-level block container.
+inline-flex	It is used to display an element as an inline-level flex container.
+inline-grid	It is used to display an element as an inline-level grid container.
+inline-table	It is used to display an inline-level table
+list-item	It is used to display all the elements in <li> element.
+run-in	It is used to display an element inline or block level, depending on the context.
+table	It is used to set the behavior as <table> for all elements.
+table-caption	It is used to set the behavior as <caption> for all elements.
+table-column-group	It is used to set the behavior as <column> for all elements.
+table-header-group	It is used to set the behavior as <header> for all elements.
+table-footer-group	It is used to set the behavior as <footer> for all elements.
+table-row-group	It is used to set the behavior as <row> for all elements.
+table-cell	It is used to set the behavior as <td> for all elements.
+table-column	It is used to set the behavior as <col> for all elements.
+table-row	It is used to set the behavior as <tr> for all elements.
+none	It is used to remove the element.
+initial	It is used to set the default value.
+inherit	It is used to inherit the property from it’s parents’ elements.
+Few important values are described below with the example.
+Block: This property is used as the default property of div. This property places the div one after another vertically. The height and width of the div can be changed using the block property if the width is not mentioned, then the div under block property will take up the width of the container.
+Example: 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS | Display property</title>
+        <style>
+            #geeks1{
+                height: 100px;
+                width: 200px;
+                background: teal;
+                display: block;
+            }
+            #geeks2{
+                height: 100px;
+                width: 200px;
+                background: cyan;
+                display: block;
+            }
+            #geeks3{
+                height: 100px;
+                width: 200px;
+                background: green;
+                display: block;
+            }
+            .gfg {
+                margin-left:20px;
+                font-size:42px;
+                font-weight:bold;
+                color:#009900;
+            }
+            .geeks {
+                font-size:25px;
+                margin-left:30px;
+            }
+            .main {
+                margin:50px;
+                text-align:center;
+            }
+        </style>
+    </head>
+     <body>
+        <div class = "gfg">GeeksforGeeks</div>
+        <div class = "geeks">display: block; property</div>
+        <div class = "main">
+            <div id="geeks1">Block 1 </div>
+            <div id="geeks2">Block 2</div>
+            <div id="geeks3">Block 3</div>
+        </div>
+    </body>                
+</html>  
+Output: 
+
+display block property
+
+Inline: This property is the default property of anchor tags. This is used to place the div inline i.e. in a horizontal manner. The inline display property ignores the height and the width set by the user. 
+Example: 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS | Display property</title>
+        <style>
+            #main{
+                height: 200px;
+                width: 200px;
+                background: teal;
+                display: inline;
+             }
+            #main1{
+                height: 200px;
+                width: 200px;
+                background: cyan;
+                display: inline;
+             }
+            #main2{
+                height: 200px;
+                width: 200px;
+                background: green;
+                display: inline;
+            }
+            .gfg {
+                margin-left:20px;
+                font-size:42px;
+                font-weight:bold;
+                color:#009900;
+            }
+            .geeks {
+                font-size:25px;
+                margin-left:30px;
+            }
+            .main {
+                margin:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "gfg">GeeksforGeeks</div>
+        <div class = "geeks">display: inline; property</div>
+        <div class = "main">
+            <div id="main"> BLOCK 1 </div>
+            <div id="main1"> BLOCK 2</div>
+            <div id="main2">BLOCK 3 </div>
+        </div>
+    </body>
+</html>    
+Output: 
+ 
+
+display inline property
+
+Inline-block: This features uses the both properties mentioned above, block and inline. So, this property aligns the div inline but the difference is it can edit the height and the width of block. Basically, this will align the div both in block and inline fashion.
+Example: 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS | Display property</title>
+        <style>
+        #main{
+                height: 100px;
+                width: 200px;
+                background: teal;
+                display: inline-block;
+             }
+            #main1{
+                height: 100px;
+                width: 200px;
+                background: cyan;
+                display: inline-block;
+             }
+            #main2{
+                height: 100px;
+                width: 200px;
+                background: green;
+                display: inline-block;
+            }
+            .gfg {
+                margin-left:200px;
+                font-size:42px;
+                font-weight:bold;
+                color:#009900;
+            }
+            .geeks {
+                font-size:25px;
+                margin-left:210px;
+            }
+            .main {
+                margin:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "gfg">GeeksforGeeks</div>
+        <div class = "geeks">display: Inline-block; property</div>
+        <div class = "main">
+            <div id="main"> BLOCK 1 </div>
+            <div id="main1"> BLOCK 2</div>
+            <div id="main2">BLOCK 3 </div>
+        </div>
+    </body>
+</html> 
+Output: 
+ 
+
+display inline block
+
+None: This property hides the div or the container which use this property. Using it on one of the div it will make working clear. 
+Example: 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS | Display property</title>
+        <style>
+        #main{
+                height: 100px;
+                width: 200px;
+                background: teal;
+                display: block;
+             }
+            #main1{
+                height: 100px;
+                width: 200px;
+                background: cyan;
+                display: none;
+             }
+            #main2{
+                height: 100px;
+                width: 200px;
+                background: green;
+                display: block;
+            }
+            .gfg {
+                margin-left:20px;
+                font-size:42px;
+                font-weight:bold;
+                color:#009900;
+            }
+            .geeks {
+                font-size:25px;
+                margin-left:20px;
+            }
+            .main {
+                margin:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "gfg">GeeksforGeeks</div>
+        <div class = "geeks">display: none; property</div>
+        <div class = "main">
+            <div id="main"> BLOCK 1 </div>
+            <div id="main1"> BLOCK 2</div>
+            <div id="main2">BLOCK 3 </div>
+        </div>
+    </body>
+</html>  
+Output: 
+ 
+
+display none property
+
+Supported Browsers: The browsers supported by the Display property are listed below: 
+ 
+
+Google Chrome 1.0
+Edge 12.0
+Internet Explorer 4.0
+Firefox 1.0
+Opera 7.0
+Safari 1.0
