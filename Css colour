@@ -1,0 +1,210 @@
+Colors
+CSS rules are simple key-value pairs along with a selector .We can set Css rules to change color and set backgrounds.so here we will talk about Colors.
+
+
+The Color Property
+CSS is used to set the text color inside an element.
+
+Syntaxp{color: red;}
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+  <style>
+  h2{
+    color:green;/*color property*/
+    }
+  </style>
+</head>
+<body>
+<h2>Welcome To GFG</h2>
+<p>Default code has been loaded into the Editor.</p>
+</body>
+</html>
+Output:
+
+
+Screenshot-(17)
+We can set color for different elements
+
+Types of color values :
+Mostly common color values are used below:
+
+RGB
+HFX colors
+HSL colors
+The CurrentColor Keyword
+RGB:
+specify color using Red,Green and Blue values.
+
+The rgb() function in CSS allows specifying colors by their red, green, and blue components. Each parameter within the function determines the intensity of the corresponding color, ranging from 0 to 255 or from 0% to 100%.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ /* RGB VALUES */
+#t1 {background-color:rgb(255,0,0);}/*Red*/
+#t2 {background-color:rgb(0,255,0);}/*Green*/
+#t3 {background-color:rgb(0,0,255);}/*Blue*/
+#t4 {background-color:rgb(292,200,199);}
+ </style>
+</head>
+<body>
+ <p id="t1">Red</p>
+<p id="t2">Green</p>
+ <p id="t3">Blue</p>
+<p id="t4">Grey</p>
+ </body>
+</html>
+
+Output:
+
+Screenshot-(18)
+
+HFX colors
+tells about the color using hex code .A hexadecimal color is defined by the format #RRGGBB, where RR (red), GG (green), and BB (blue) are hexadecimal integers representing the color components. These values range from 00 to FF.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ /* HEX code */
+#t1 {background-color:#ff0000;}/*Red*/
+#t2 {background-color:#00ff00}/*Green*/
+#t3 {background-color:#0000ff}/*Blue*/
+#t4 {background-color:#ff0098}
+ </style>
+</head>
+<body>
+ <h1 id="t1">Red</h1>
+<h2 id="t2">Green</h2>
+ <h3 id="t3">Blue</h3>
+<h4 id="t4">Pink</h4>
+ </body>
+</html>
+
+
+Output:
+Screenshot-(19)
+
+
+HSL Color:
+HSL (Hue, Saturation, Lightness) embodies a cylindrical-coordinate model for colors.Specified using the hsl() function, the format is hsl(hue, saturation, lightness).Hue denotes a position on the color wheel (0 to 360), with red at 0 (or 360), green at 120, and blue at 240.Saturation (0% for gray, 100% for full color) and lightness (0% for black, 100% for white) complete the definition.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ /* HSL code */
+#t1 {background-color:hsl(0, 100%, 50%);}/*Red*/
+#t2 {background-color:hsl(120, 100%, 50%);}/*Green*/
+#t3 {background-color:hsl(240, 100%, 50%);/*Blue*/
+ </style>
+</head>
+<body>
+ <h1 id="t1">Red</h1>
+<h2 id="t2">Green</h2>
+ <h3 id="t3">Blue</h3>
+ </body>
+</html>
+
+Ouput:
+Screenshot-(20)
+
+CurrentColor Keyword:
+The currentcolor keyword refers to the value of the color property of an element.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  color: red;
+  border: 10px solid currentcolor;
+}
+</style>
+</head>
+<body>
+<p id="myDIV">
+It is a good paragraph.......
+</p>
+ </body>
+</html>
+
+Output:
+
+Screenshot-(21)
+
+Note:
+
+We have RGBA and HSLA values for color also here A stands for alpha.
+
+RGBA:
+It is an extension version of RGB color value with an A alpha channel with it.
+
+Syntax:rgba(red, green, blue, alpha)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p6 {background-color:rgba(0,255,0,0.1);}
+#p5 {background-color:rgba(0,255,0,0.2);}
+#p4 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,255,0,0.4);}
+#p2 {background-color:rgba(0,255,0,0.5);}
+#p1 {background-color:rgba(0,255,0,0.6);}
+</style>
+</head>
+<body>
+ <p>RGBA color Value</p>
+<h1 id="p1">GeeksforGeeks</h1>
+<h2 id="p2">GeeksforGeeks</h2>
+<h3 id="p3">GeeksforGeeks</h3>
+<h4 id="p4">GeeksforGeeks</h4>
+<h5 id="p5">GeeksforGeeks</h5>
+<h6 id="p6">GeeksforGeeks</h6>
+ </body>
+</html>
+
+Output:
+
+Screenshot-(22)
+HSLA color :
+
+
+It is an extension version of HSL color value with an A alpha channel with it.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p6 {background-color:hsla(120, 100%, 50%, 0.1);}
+#p5 {background-color:hsla(120, 100%, 50%, 0.2);}
+#p4 {background-color:hsla(120, 100%, 50%, 0.3);}
+#p3 {background-color:hsla(120, 100%, 50%, 0.4);}
+#p2 {background-color:hsla(120, 100%, 50%, 0.5);}
+#p1 {background-color:hsla(120, 100%, 50%, 0.6);}
+</style>
+</head>
+<body>
+ <p>RGBA color Value</p>
+<h1 id="p1">GeeksforGeeks</h1>
+<h2 id="p2">GeeksforGeeks</h2>
+<h3 id="p3">GeeksforGeeks</h3>
+<h4 id="p4">GeeksforGeeks</h4>
+<h5 id="p5">GeeksforGeeks</h5>
+<h6 id="p6">GeeksforGeeks</h6>
+ </body>
+</html>
+
+Output:
+
+Screenshot-(23)
+
+
+
+
+
